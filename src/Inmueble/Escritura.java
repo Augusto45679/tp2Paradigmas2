@@ -1,5 +1,4 @@
 package Inmueble;
-
 import java.io.FileInputStream;
 import java.io.FileNotFoundException;
 import java.io.FileOutputStream;
@@ -24,7 +23,7 @@ public class Escritura implements Serializable {
       
        try{
         
-        FileOutputStream f1 = new FileOutputStream("archivo.txt"); //creamos el archivo 
+        FileOutputStream f1 = new FileOutputStream("archivo2.txt"); //creamos el archivo 
         ObjectOutputStream o1 = new ObjectOutputStream(f1);  
 
         o1.writeObject(this);    //El método writeObject() serializa el objeto y lo escribe en el archivo
@@ -67,5 +66,4 @@ public class Escritura implements Serializable {
         }
          return instanciaRecuperada;
     }
-   
 }

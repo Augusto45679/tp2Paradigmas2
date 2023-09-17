@@ -41,11 +41,12 @@ public class Main {
 
            try{
             escritura1.guardar(); 
+            System.out.println(" ");
             System.out.println("Se guardo un archivo bonito");
            } catch(IOException e){
             e.printStackTrace(); 
            } 
-
+           
            //acá recuperamos una escritura
            Escritura escrituraRecuperada = null; 
 
